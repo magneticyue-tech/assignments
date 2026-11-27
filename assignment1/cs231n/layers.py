@@ -43,7 +43,7 @@ def affine_backward(dout, cache):
     Inputs:
     - dout: Upstream derivative, of shape (N, M)
     - cache: Tuple of:
-      - x: Input data, of shape (N, d_1, ... d_k)
+      - x: Input data, of shape (N, d_1, ... d_k), reshaped into (N, D)
       - w: Weights, of shape (D, M)
       - b: Biases, of shape (M,)
 
